@@ -15,7 +15,7 @@ class Player {
         ypos = y;
 
         size = 40;
-        speed = 10;
+        speed = 5;
 
         left = false;
         right = false;
@@ -43,6 +43,10 @@ class Player {
         if (down) {
             ypos += speed;
         } 
+
+        xpos = constrain(xpos,0,width-size);
+        ypos = constrain(ypos,0,height-size);
+
     }
 
     void keyPressed() {
