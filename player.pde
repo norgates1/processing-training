@@ -11,6 +11,7 @@ class Player {
     }
 
     void display() {
+        fill(255,0,0);
         rect(xpos,ypos,size,size);
     }
 }
